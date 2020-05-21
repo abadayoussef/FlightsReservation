@@ -1,0 +1,31 @@
+table{
+    background-image: url('..\\images\\Plane-4K.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  
+}
+tbody tr{
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+tbody tr:hover{
+    color: orangered;
+}
+.btn-primary{
+    border: none;
+    background-color: #333;
+}
+.btn-primary:hover{
+    background-color: orangered;
+}
+.jumbotron{
+    color: white;
+    /* background-color: black; */
+    background-image: url('..\\images\\bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
