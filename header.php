@@ -32,10 +32,10 @@ if(isset($_SESSION['log']) && isset($_GET['log']) && $_GET['log'] == "out"){
     <nav class="navbar bg-dark navbar-dark">
         <a class="navbar-brand mr-auto" href="index.php">Flight Star</a>
         <?php if(isset($_SESSION['log'])) { ?>
-            <a class="nav-link text-white" href="?log=out">Logout <?php echo $_SESSION['firstname'];?></a>
-        
+        <a class="nav-link text-white" href="?log=out">Logout <?php echo $_SESSION['firstname'];?></a>
+
         <?php }else{ ?>
-            <a class="nav-link text-white" href="regester.php">Sing In / Login</a>
-        
+        <a class="nav-link text-white" href="regester.php">Sing In / Login</a>
+
         <?php } ?>
     </nav>

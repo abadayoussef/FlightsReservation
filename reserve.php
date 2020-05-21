@@ -41,22 +41,22 @@ $result = mysqli_query($connection, $query);
     die("there is an error in your query");
   }
 ?>
- 
+
 <div class="container">
     <div class="card mt-4">
         <div class="card-header">
             <p>
-                From <b><?php echo $result['depart']?></b> to <b><?php echo $result['distination']?></b> 
+                From <b><?php echo $result['depart']?></b> to <b><?php echo $result['distination']?></b>
             </p>
         </div>
         <div class="card-body">
 
             <h4 class="card-title">Reservation for <span class="text-primary">
-                <?php echo $result['first_name']. ' '.$result['last_name']?></span></h4>
+                    <?php echo $result['first_name']. ' '.$result['last_name']?></span></h4>
 
             <h6 class="card-text">
                 Flight on <span class="text-primary"><?php echo $result['plane_name']?>
-            </span> start from <span class="text-primary"><?php echo $result['date_flight']?></span><br>
+                </span> start from <span class="text-primary"><?php echo $result['date_flight']?></span><br>
             </h6>
         </div>
         <div class="card-footer" style="display: flex; justify-content: space-between;">
@@ -64,9 +64,9 @@ $result = mysqli_query($connection, $query);
                 <p class="card-text">Total Price: <span class="text-primary"><?php echo $result['price']?></span></p>
             </div>
             <form action="reserve.php" method="POST">
-            <input type="hidden" name="idUser" value="<?php echo $user_id;?>">
-            <input type="hidden" name="idFlight" value="<?php echo $flight_id;?>">
-            <button type="submit" class="btn btn-primary">Confirm this reservation</button>
+                <input type="hidden" name="idUser" value="<?php echo $user_id;?>">
+                <input type="hidden" name="idFlight" value="<?php echo $flight_id;?>">
+                <button type="submit" class="btn btn-primary">Confirm this reservation</button>
             </form>
         </div>
     </div>
@@ -77,4 +77,5 @@ $result = mysqli_query($connection, $query);
     mysqli_close($connection);
 ?>
 </body>
+
 </html>
